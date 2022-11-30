@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/informback"
+    tools:context=".mainPage">
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="학부모로그인 페이지"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:backgroundTint="#A9CFED"
+        android:text="기관 로그인"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/p_Id"
+        app:layout_constraintEnd_toEndOf="@+id/p_Id"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/p_Id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/p_pw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_c"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/p_pw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/p_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_Id" />
+
+    <Button
+        android:id="@+id/p_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A9CFED"
+        android:text="로그인"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/p_pw"
+        app:layout_constraintEnd_toStartOf="@+id/p_join"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_pw" />
+
+    <Button
+        android:id="@+id/p_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#A9CFED"
+        android:text="회원가입"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/p_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/p_login"
+        app:layout_constraintTop_toTopOf="@+id/p_login"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

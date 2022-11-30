@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/informback"
+    tools:context=".c_menuPage">
+
+    <Button
+        android:id="@+id/btn_c_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="#A9CFED"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_inform"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="248dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inform" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="운행"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drive"
+        app:layout_constraintStart_toStartOf="@+id/btn_drive"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drive" />
+
+    <ImageButton
+        android:id="@+id/btn_drive"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="248dp"
+        android:padding="0sp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bus" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="알림장"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_inform"
+        app:layout_constraintStart_toStartOf="@+id/btn_inform"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inform" />
+
+    <ImageButton
+        android:id="@+id/btn_album"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picture" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="앨범"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_album"
+        app:layout_constraintStart_toStartOf="@+id/btn_album"
+        app:layout_constraintTop_toBottomOf="@+id/btn_album" />
+
+    <ImageButton
+        android:id="@+id/btn_comu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/btn_album"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/commu" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="커뮤니티"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_comu"
+        app:layout_constraintStart_toStartOf="@+id/btn_comu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_comu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

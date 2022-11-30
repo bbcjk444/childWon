@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/informback"
+    tools:context=".joinPage2">
+
+
+    <TextView
+        android:id="@+id/menu_cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        android:gravity="center"
+        android:text="기관 회원가입"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/c_join_idcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#A9CFED"
+        android:text="중복확인"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/c_join_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/c_join_id"
+        app:layout_constraintTop_toTopOf="@+id/c_join_id" />
+
+    <EditText
+        android:id="@+id/c_join_pw"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_pwc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_id" />
+
+    <EditText
+        android:id="@+id/c_join_phone"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_cname" />
+
+    <EditText
+        android:id="@+id/c_join_cname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="기관명"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_pwc" />
+
+    <Button
+        android:id="@+id/c_join_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#A9CFED"
+        android:text="취소"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/c_join_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/c_join_ok"
+        app:layout_constraintTop_toTopOf="@+id/c_join_ok"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/c_join_id"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_pw"
+        app:layout_constraintEnd_toStartOf="@+id/c_join_idcheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_name" />
+
+    <EditText
+        android:id="@+id/c_join_pwc"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="Password check"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_cname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_pw" />
+
+    <EditText
+        android:id="@+id/c_join_add"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="주소"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_ok"
+        app:layout_constraintEnd_toStartOf="@+id/c_join_addfind"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_phone" />
+
+    <Button
+        android:id="@+id/c_join_addfind"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="#A9CFED"
+        android:text="찾기"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/c_join_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/c_join_add"
+        app:layout_constraintTop_toTopOf="@+id/c_join_add" />
+
+    <Button
+        android:id="@+id/c_join_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A9CFED"
+        android:text="확인"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_join_cancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_join_add" />
+
+    <EditText
+        android:id="@+id/c_join_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/c_join_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_cname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

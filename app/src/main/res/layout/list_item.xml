@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="79dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="제목"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="title"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="작성자"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="id"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="작성일"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="time"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ellipsize="end"
+                android:paddingLeft="10sp"
+                android:text="content"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
